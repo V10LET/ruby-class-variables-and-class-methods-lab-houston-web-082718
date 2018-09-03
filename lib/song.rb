@@ -26,6 +26,12 @@ class Song
   
   def self.artists
     uniq_artists = []
-   self.select! { |artist| !self.include?(artist) }
+   
+    if artist in self.artists
+      !uniq_artists.include?(artist)
+      uniq_artists << artist
+    end
+    
+    uniq_artists
   end 
 end
