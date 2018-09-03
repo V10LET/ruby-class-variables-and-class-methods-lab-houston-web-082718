@@ -25,6 +25,7 @@ class Song
   end
   
   def self.artists
-    @@artists.select! { |artist| !@@artists.include?(artist) }
+    uniq_artists = []
+   self.select! { |artist| !self.include?(artist) }
   end 
 end
