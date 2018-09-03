@@ -24,7 +24,7 @@ class Song
     @@genres
   end
   
-  def self.artists
-   
+  def self.artists(artists)
+    artists.select()
   end 
 end
