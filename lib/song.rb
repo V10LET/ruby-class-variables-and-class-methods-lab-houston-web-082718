@@ -25,6 +25,6 @@ class Song
   end
   
   def self.artists(artists)
-    artists.select! { |artist|  }
+    artists.select! { |artist| artists.include?(artist) }
   end 
 end
