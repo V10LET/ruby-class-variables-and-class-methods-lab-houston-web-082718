@@ -18,8 +18,6 @@ class Song
       @@artists << artist
       @@genres << genre
     end
-    
-    
   end
   
   def self.count
