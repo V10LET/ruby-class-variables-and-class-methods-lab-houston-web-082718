@@ -27,9 +27,10 @@ class Song
   def self.artists
     uniq_artists = []
    
-    if artist in self
-      !uniq_artists.include?(artist)
-      uniq_artists << artist
+    for artist in self.artist
+      unless !uniq_artists.include?(artist)
+        uniq_artists << artist
+      end
     end
     
     uniq_artists
