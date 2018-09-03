@@ -44,5 +44,13 @@ class Song
     genre_hash
   end
   
-  def 
+  def self.artist_count
+    artist_hash = {}
+    for artist in @@artists
+      artist_hash[artist] = @@artists.count(artist)
+    end
+    artist_hash
+  end
 end
+
+
