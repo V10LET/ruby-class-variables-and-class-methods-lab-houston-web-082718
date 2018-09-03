@@ -47,7 +47,11 @@ class Song
   def self.artist_count
     artist_hash = {}
     for artist in @@artists
-      artist_hash[artist] = @@artists.count(artist)
+      if @@artists[artist] == nil
+        artist_hash[artist] = 1
+      else
+        artist_hash[artist] += 1
+      end
     end
     artist_hash
   end
