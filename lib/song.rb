@@ -40,7 +40,7 @@ class Song
     genre_hash = {}
     
     for genre in @@genres
-      genre_hash[:genre] = 
+      genre_hash[:genre] = @@genres.count(genre)
     end
     
     genre_hash
