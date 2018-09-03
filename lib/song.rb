@@ -13,7 +13,8 @@ class Song
     @@count += 1
     
     if @@artists.include?(artist)
-  binding.pry
+      false
+    else
       @@artists << artist 
     end
     
