@@ -19,10 +19,6 @@ class Song
   def self.count
     @@count
   end
-
-  def self.genres
-    @@genres
-  end
   
   def self.artists
     uniq_artists = []
@@ -34,5 +30,10 @@ class Song
     end
     
     uniq_artists
-  end 
+  end
+  
+  def self.genres
+    @@genres.uniq
+  end
+  
 end
