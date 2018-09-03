@@ -27,7 +27,7 @@ class Song
   def self.artists
     uniq_artists = []
    
-    if artist in @@artists
+    if artist in self
       !uniq_artists.include?(artist)
       uniq_artists << artist
     end
