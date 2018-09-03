@@ -28,7 +28,7 @@ class Song
     uniq_artists = []
    
     for artist in @@artists
-      unless !uniq_artists.include?(artist)
+      unless uniq_artists.include?(artist)
         uniq_artists << artist
       end
     end
