@@ -13,7 +13,7 @@ class Song
     @@count += 1
     
     unless @@artists.include?(artist)
-      @@artist << artist       
+      @@artists << artist       
     end
   end
   
