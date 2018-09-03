@@ -12,12 +12,9 @@ class Song
     @genre = genre
     @@count += 1
     
-    if @@artists.include?(artist)
-      false
-    else
-      @@artists << artist
-      @@genres << genre
-    end
+    @@artists.select { |artist|
+      if       
+    }
   end
   
   def self.count
