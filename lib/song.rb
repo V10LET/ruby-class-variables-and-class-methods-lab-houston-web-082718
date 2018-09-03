@@ -24,7 +24,7 @@ class Song
     @@genres
   end
   
-  def self.artists(artists)
-    artists.select! { |artist| !artists.include?(artist) }
+  def self.artists
+    @@artists.select! { |artist| !@@artists.include?(artist) }
   end 
 end
