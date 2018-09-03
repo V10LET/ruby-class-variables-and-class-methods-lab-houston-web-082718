@@ -37,10 +37,12 @@ class Song
   end
   
   def self.genre_count
-    
+    genre_hash = {}
     
     for genre in @@genres
-      
+      genre_hash[:genre] = 
     end
+    
+    genre_hash
   end
 end
