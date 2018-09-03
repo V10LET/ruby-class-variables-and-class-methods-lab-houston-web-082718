@@ -37,6 +37,7 @@ class Song
   end
   
   def self.genre_count
+    new_hash[:@@genre] = @@count
     for genre in @@genres
       
     end
